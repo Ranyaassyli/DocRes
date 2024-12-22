@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8EAF6"
+    tools:context=".activities.DoctorReservationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header Section -->
+
+        <ImageView
+            android:id="@+id/doctorImage"
+            android:layout_width="407dp"
+            android:layout_height="230dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/doctor_image"
+            android:src="@drawable/doc2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/doctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr. Frank"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/deepPink"
+            app:layout_constraintTop_toBottomOf="@id/doctorImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/doctorSpecialty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardiologist"
+            android:textSize="16sp"
+            android:textColor="@color/dimGray"
+            app:layout_constraintTop_toBottomOf="@id/doctorName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center" />
+
+        <RatingBar
+            android:id="@+id/doctorRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="4.5"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/doctorSpecialty"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- About the Doctor Section -->
+        <TextView
+            android:id="@+id/doctorBioTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About the Doctor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/doctorRating"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:id="@+id/doctorBio"
+            android:layout_width="377dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="8dp"
+            android:text="Dr. John Doe is a highly experienced cardiologist with over 10 years of practice."
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/doctorBioTitle" />
+
+        <TextView
+            android:id="@+id/doctorCredentials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Certified in Cardiology, Affiliated with XYZ Hospital"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/doctorBio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/doctorLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XYZ Hospital, 123 Main St, City, Country"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/doctorCredentials"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Available Services Section -->
+        <TextView
+            android:id="@+id/availableServicesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Services"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/doctorLocation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:id="@+id/consultationTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In-person Consultation, Video Consultation"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/availableServicesTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/specialTreatments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Physical Exams, Follow-Up Appointments"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/consultationTypes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/consultationDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consultation Duration: 30-45 minutes"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/specialTreatments"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Tabs for Other Options -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/consultationTabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabBackground="@color/lightPink"
+            app:tabIndicatorColor="@color/deepPink"
+            app:tabTextColor="@color/dimGray"
+            app:layout_constraintTop_toBottomOf="@id/consultationDuration" />
+q
+        <!-- Date Picker & Time Slots Section -->
+        <TextView
+            android:id="@+id/selectDateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Appointment Date"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/consultationTabs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/selectDateTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:background="#9A989E"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/timeSlotsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:background="#E8EAF6"
+            app:layout_constraintTop_toBottomOf="@id/datePicker" />
+
+        <!-- Patient Information Input -->
+        <TextView
+            android:id="@+id/patientInfoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Enter Patient Information"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/timeSlotsRecyclerView" />
+
+        <EditText
+            android:id="@+id/patientName"
+            android:layout_width="342dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Patient's Name"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/patientInfoTitle" />
+
+
+        <EditText
+            android:id="@+id/patientAge"
+            android:layout_width="343dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Patient's Age"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/patientName" />
+
+        <EditText
+            android:id="@+id/patientSymptoms"
+            android:layout_width="344dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Symptoms"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/patientAge" />
+
+
+        <Button
+            android:id="@+id/confirmAppointmentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"
+            android:text="Confirm Appointment"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/patientSymptoms"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

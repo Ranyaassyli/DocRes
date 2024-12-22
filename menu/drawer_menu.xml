@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Profile"
+        android:icon="@drawable/profile" />
+
+    <item
+        android:id="@+id/menu_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings" />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout" />
+
+    <!-- New Menu Item -->
+    <item
+        android:id="@+id/menu_how_have_you_been"
+        android:title="How Have You Been?"
+        android:icon="@drawable/smile" />
+</menu>
