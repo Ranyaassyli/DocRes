@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivi de la Santé Mentale"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <Spinner
+        android:id="@+id/mood_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/journal_entry"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Écrivez vos pensées..."
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enregistrer"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/view_entries_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voir les Entrées"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:id="@+id/view_solutions_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voir les Solutions"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
